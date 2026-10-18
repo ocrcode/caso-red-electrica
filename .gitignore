@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Salidas del solver
+*.log
+*.lp
+*.mps
+*.sol
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
