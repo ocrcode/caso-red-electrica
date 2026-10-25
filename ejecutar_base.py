@@ -1,6 +1,6 @@
 """
-ejecutar_base.py — Resuelve el caso base, compara las versiones del modelo (V0–V4, Tabla 7 de la
-memoria: coste, tiempo y tamaño), mide el efecto de cada hipótesis (Tabla 8) y guarda tablas
+ejecutar_base.py — Resuelve el caso base, compara las versiones del modelo (V0–V4, Tabla 8 de la
+memoria: coste, tiempo y tamaño), mide el efecto de cada hipótesis (Tabla 10) y guarda tablas
 (Excel, CSV) y figuras (PNG) en ./resultados/.  Ejecutar:  python ejecutar_base.py
 """
 import os
@@ -141,7 +141,7 @@ if __name__ == '__main__':
         dd.update(cambios)
         t0 = time.time()
         mm = construir_modelo(dd)
-        tam = tamano(mm)                      # tamaño de cada versión (criterio de comparación, Tabla 7)
+        tam = tamano(mm)                      # tamaño de cada versión (criterio de comparación, Tablas 8 y 9)
         ii = resolver(mm)
         seg = time.time() - t0
         fila = dict(Version=nombre, Estado=ii['estado'], Coste=ii['coste'], Segundos=round(seg, 2),

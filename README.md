@@ -18,7 +18,7 @@ para la Organización Industrial* (Máster Universitario en Ingeniería Industri
 
 ## 1. Instalación
 
-Hace falta Python 3.10, 3.11 o 3.12 (HiGHS aún no tiene versión para Python más reciente).
+Hace falta Python 3.10, 3.11 o 3.12, las versiones con las que se ha probado el código (también en GitHub).
 
 **Windows, sin usar la terminal.** Doble clic en `EJECUTAR_HERRAMIENTA.bat`. La primera vez crea el entorno
 `.venv` con Python 3.12, instala las librerías, ejecuta la validación y abre la herramienta en el navegador.

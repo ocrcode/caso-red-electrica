@@ -115,7 +115,7 @@ Figura 4
 
 *Nota.* Elaboración propia con datos del enunciado del caso (Maheut, 2026).
 
-La restricción (R5) se refiere al bombeo. El bombeo $b$ de cada hidráulica es una variable continua no negativa. Dado que el enunciado no limita su potencia ni prohíbe bombear y turbinar a la vez, se ha elegido la formulación más simple (H6) y no se añade ninguna restricción propia. Así, el bombeo consume potencia en el nodo de la central (R1) y solo lo limitan las líneas que llegan a B y E. La versión V4 (apartado 4.7) añade el modo de funcionamiento mediante una binaria $w$, con $u + w \leq 1$ y $b \leq PBOMBA \cdot w$, y, como el depósito es compartido (H1), impide bombear con una central mientras turbina la otra: $w_{B,t} + u_{E,t} \leq 1$ y $w_{E,t} + u_{B,t} \leq 1$.
+La restricción (R5) se refiere al bombeo. El bombeo $b$ de cada hidráulica es una variable continua no negativa. Dado que el enunciado no limita su potencia ni prohíbe bombear y turbinar a la vez, se ha elegido la formulación más simple (H6) y no se añade ninguna restricción propia. Así, el bombeo consume potencia en el nodo de la central (R1) y solo lo limitan las líneas que llegan a B y E. La versión V4 (apartado 4.7) añade el modo de funcionamiento mediante una binaria $w_{h,t}$, con $u_{h,t} + w_{h,t} \leq 1$ y $b_{h,t} \leq {PBOMBA}_{h}\, w_{h,t}$, y, como el depósito es compartido (H1), impide bombear con una central mientras turbina la otra: $w_{B,t} + u_{E,t} \leq 1$ y $w_{E,t} + u_{B,t} \leq 1$.
 
 La restricción (R6) expresa el balance del depósito, que empieza y acaba el día con al menos 10 m (H2):
 
@@ -135,7 +135,7 @@ $$EM = \sum_{t \in T}^{}\left\lbrack \sum_{g \in G^{T} \cup G^{N}}^{}{FE}_{g}\, 
 
 La restricción (R10) diagnostica escenarios imposibles (capítulo 8). Se suma ${\mathit{e}\mathit{n}\mathit{s}}_{n,t}$ a la generación de cada centro en (R1) y ${\mathit{r}\mathit{d}\mathit{e}\mathit{f}}_{t}$ al primer miembro de (R7), y el objetivo añade $\sum_{n,t}^{}{CENS} \cdot {\mathit{e}\mathit{n}\mathit{s}}_{n,t} + \sum_{t}^{}{CRES} \cdot {\mathit{r}\mathit{d}\mathit{e}\mathit{f}}_{t}$, con $CENS = 10.000$ €/MWh y $CRES = 1.000$ €/MW·h. Así, un escenario sin solución muestra cuánta demanda y reserva faltan, y dónde.
 
-Por último, la restricción (R11) solo se activa en el análisis 5, en el que la nuclear se sustituye por un parque eólico en el nodo de D. En ese caso $G^{N} = \varnothing$, la generación del nodo D en (R1) pasa a ser ${\mathit{p}\mathit{e}}_{t}$ y la producción eólica queda limitada por el viento disponible:
+Por último, la restricción (R11) solo se activa en el análisis 5, en el que la nuclear se sustituye por un parque eólico en el nodo de D. En ese caso $G^{N} = \emptyset$, la generación del nodo D en (R1) pasa a ser ${\mathit{p}\mathit{e}}_{t}$ y la producción eólica queda limitada por el viento disponible:
 
 $$0 \leq {\mathit{p}\mathit{e}}_{t} \leq PEOL \cdot {FV}_{t}\quad\quad\forall t \in T$$
 
