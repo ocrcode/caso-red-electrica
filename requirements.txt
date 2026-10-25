@@ -1,2 +1,7 @@
-pyomo>=6.8
-highspy>=1.8
+pyomo>=6.7
+highspy>=1.7
+streamlit>=1.35
+pandas>=2.0
+numpy
+matplotlib
+openpyxl

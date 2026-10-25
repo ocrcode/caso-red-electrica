@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {"name": "Herramienta de apoyo a la decisión (Streamlit)", "type": "debugpy", "request": "launch",
+         "module": "streamlit", "args": ["run", "app.py"], "cwd": "${workspaceFolder}", "console": "integratedTerminal"},
+        {"name": "Caso base, versiones e hipótesis (cap. 7)", "type": "debugpy", "request": "launch",
+         "program": "${workspaceFolder}/ejecutar_base.py", "cwd": "${workspaceFolder}", "console": "integratedTerminal"},
+        {"name": "Verificación y validación (cap. 6)", "type": "debugpy", "request": "launch",
+         "program": "${workspaceFolder}/validacion.py", "cwd": "${workspaceFolder}", "console": "integratedTerminal"},
+        {"name": "Análisis de sensibilidad y validez (cap. 8 y 10.4)", "type": "debugpy", "request": "launch",
+         "program": "${workspaceFolder}/analisis_sensibilidad.py", "cwd": "${workspaceFolder}", "console": "integratedTerminal"},
+        {"name": "Frontera de Pareto coste-CO2 (cap. 9)", "type": "debugpy", "request": "launch",
+         "program": "${workspaceFolder}/analisis_sensibilidad.py", "args": ["pareto"], "cwd": "${workspaceFolder}", "console": "integratedTerminal"},
+        {"name": "Figuras 1 a 4 de la memoria", "type": "debugpy", "request": "launch",
+         "program": "${workspaceFolder}/figuras_memoria.py", "cwd": "${workspaceFolder}", "console": "integratedTerminal"}
+    ]
+}

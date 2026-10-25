@@ -2,20 +2,21 @@
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
+.pytest_cache/
 
-# Entornos virtuales
+# Entornos virtuales (EJECUTAR_HERRAMIENTA.bat crea .venv)
 .venv/
 venv/
 env/
 
-# Salidas del solver
+# Salidas del solver y registros de instalación
 *.log
 *.lp
 *.mps
 *.sol
+registro_instalacion.txt
 
-# Sistema y editores
+# Sistema y editores (la carpeta .vscode sí se versiona: configura el proyecto)
 .DS_Store
 Thumbs.db
-.vscode/
 .idea/
