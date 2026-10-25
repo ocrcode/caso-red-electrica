@@ -1,0 +1,12 @@
+Hipótesis,Estado,Coste,Δ vs base (€),Δ %,Horas F,Horas hidro,MWh bombeados,D medio (MW),Arranques,CO2 (t),Segundos
+Caso base,optimal,613800,0,0.0,15,0,0,886,2,27028,0.31
+H4 Curva nuclear: coste medio,optimal,625421,11620,1.9,15,0,0,729,2,28829,1.01
+"H4 Curva nuclear: coste total en k€/h (no convexa, SOS2)",optimal,674743,60943,9.9,15,0,0,684,2,29352,15.35
+H2 Nivel inicial 15 m (cierre >= inicial),optimal,613762,-38,-0.0,12,3,4752,887,3,28793,0.5
+H2 Nivel inicial 20 m (cierre >= inicial),optimal,613800,0,0.0,15,0,0,886,2,27028,0.29
+H2 Nivel inicial 15 m y cierre libre,optimal,535026,-78774,-12.8,7,12,132,898,7,24625,1.13
+H1 Un depósito por central,optimal,613800,0,0.0,15,0,0,886,2,27028,0.27
+H5 Día aislado: A y D en marcha a las 0 h,optimal,616800,3000,0.5,15,0,0,886,4,27028,0.35
+H5 Día aislado: todo parado a las 0 h,optimal,622800,9000,1.5,15,0,0,886,6,27028,0.32
+Reserva hidráulica sólo con agua en el depósito,optimal,616726,2926,0.5,15,0,585,886,2,27315,0.56
+"H3 Central A de carbón (0,82 t/MWh)",optimal,613800,0,0.0,15,0,0,886,2,36615,0.32

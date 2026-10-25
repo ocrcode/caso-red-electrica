@@ -1,0 +1,6 @@
+Version,Estado,Coste,Segundos,Variables,Binarias,Restricciones,Arranques,Horas F,Horas hidro,MWh bombeados,Δ vs base (€)
+"V0 Base: red, reserva, curva nuclear convexa sin binarias",optimal,613800.1249999998,0.31,1105,144,698,2,15,0,0,0
+V1 Sin red (nudo único),optimal,590095.8749999743,0.46,1105,144,458,6,10,5,4950,-23704
+V2 Sin reserva,optimal,613800.125,0.3,1105,144,674,2,15,0,0,0
+V3 Nuclear con SOS2 (binarias),optimal,613800.125,1.69,1417,456,1058,2,15,0,0,0
+V4 Bombeo limitado a la potencia de la central y sin turbinar a la vez,optimal,613800.125,0.37,1153,192,842,2,15,0,0,0
