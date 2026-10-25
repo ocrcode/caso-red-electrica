@@ -1,7 +1,9 @@
-pyomo>=6.7
-highspy>=1.7
-streamlit>=1.35
-pandas>=2.0
-numpy
-matplotlib
-openpyxl
+# Versiones fijadas y probadas con Python 3.10, 3.11, 3.12 y 3.13
+# (caso base, validacion.py 14/14, pytest y herramienta Streamlit).
+pyomo==6.10.1
+highspy==1.11.0
+streamlit==1.45.1
+pandas==2.2.3
+numpy==2.2.6
+matplotlib==3.10.3
+openpyxl==3.1.5
