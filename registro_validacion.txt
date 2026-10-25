@@ -1,7 +1,7 @@
-{'solver': 'appsi_highs', 'estado': 'optimal', 'coste': 613800.1249999998}
-[OK ] V1.1 Balance de potencia del sistema en cada hora (error máx 9.09e-12 MW)
-[OK ] V1.2 Balance en cada nodo (Kirchhoff) recalculado (error máx 8.88e-12 MW)
-[OK ] V1.3 Flujos dentro de la capacidad de las líneas (máx exceso 1.99e-12)
+{'solver': 'appsi_highs', 'estado': 'optimal', 'coste': 613800.125}
+[OK ] V1.1 Balance de potencia del sistema en cada hora (error máx 4.55e-13 MW)
+[OK ] V1.2 Balance en cada nodo (Kirchhoff) recalculado (error máx 5.68e-13 MW)
+[OK ] V1.3 Flujos dentro de la capacidad de las líneas (máx exceso 1.14e-13)
 [OK ] V1.4 Potencias entre mínimo y máximo técnico (0 si parada) 
 [OK ] V1.6 Nivel del depósito recalculado dentro de [10, 20] m (min 10.00 m, max 10.00 m, final 10.00 m)
 [OK ] V1.7 Cierre del día: nivel final >= inicial 

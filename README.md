@@ -58,6 +58,8 @@ streamlit run app.py
 
 Se abre en el navegador (http://localhost:8501).
 
+0. **Guía de uso.** Panel desplegable en la parte superior, abierto al arrancar: pasos, qué se puede cambiar,
+   cómo leer cada pestaña, recetas para los cinco análisis y problemas frecuentes.
 1. **Barra lateral: definir el escenario.** Hipótesis de modelado (lectura de la curva nuclear, red, reserva,
    reserva hidráulica bajo 10 m, depósito, nivel inicial y final, bombeo, día cíclico), intercambio exterior
    (precios por periodo), centrales paradas y sus costes y límites, líneas cortadas y sus capacidades, parque
@@ -100,6 +102,7 @@ con Python 3.10, 3.11 y 3.12 (`.github/workflows/python-package.yml`).
 | `escenarios.py` | Lógica de la herramienta: indicadores, interpretación, barridos, Excel y perfiles de viento (H9) |
 | `graficos.py` | Figuras de la herramienta |
 | `app.py` | Interfaz Streamlit |
+| `guia.py` | Texto de la guía de uso que muestra la interfaz |
 | `ejecutar_base.py`, `validacion.py`, `analisis_sensibilidad.py`, `figuras_memoria.py` | Resultados, evidencias y figuras de la memoria |
 | `tests/` | Pruebas automáticas (pytest) |
 | `EJECUTAR_HERRAMIENTA.bat` | Instalación y arranque en Windows |

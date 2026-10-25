@@ -15,6 +15,7 @@ import streamlit as st
 from datos import escenario_base
 import escenarios as esc
 import graficos as gr
+import guia
 
 st.set_page_config(page_title='Red Eléctrica · Programación de la generación', page_icon='⚡', layout='wide')
 
@@ -47,6 +48,7 @@ if 'comparados' not in st.session_state:
 # ---------------------------------------------------------------------------
 sb = st.sidebar
 sb.title('⚡ Escenario')
+sb.caption(guia.RESUMEN)
 nombre = sb.text_input('Nombre del escenario', 'Mi escenario')
 d = escenario_base()
 
@@ -159,6 +161,9 @@ st.title('Programación de la generación de un día tipo')
 st.caption('Modelo MILP (Pyomo + HiGHS) · Caso Red Eléctrica · MCOI 2026-27')
 
 act = st.session_state.get('actual')
+# Guía de uso: abierta la primera vez; se pliega en cuanto se resuelve un escenario
+with st.expander('📖 Guía de uso: cómo usar la herramienta', expanded=act is None):
+    guia.mostrar()
 if act is None:
     st.info('Defina un escenario en la barra lateral y pulse **Resolver**. Mientras tanto se muestra el caso base.')
     act = dict(nombre='Caso base', d=d_base, r=r_base, k=k_base, info=dict(estado='optimal'))
