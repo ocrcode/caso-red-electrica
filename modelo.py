@@ -274,7 +274,7 @@ def construir_modelo(d):
 
 
 def tamano(m):
-    """Tamaño del modelo: variables, variables binarias y restricciones activas (Tabla 7 de la memoria)."""
+    """Tamaño del modelo: variables, variables binarias y restricciones activas (Tabla 8 de la memoria)."""
     vs = list(m.component_data_objects(pyo.Var))
     return dict(variables=len(vs), binarias=sum(1 for v in vs if v.is_binary()),
                 restricciones=len(list(m.component_data_objects(pyo.Constraint, active=True))))
